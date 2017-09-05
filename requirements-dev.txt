@@ -1,0 +1,2 @@
+django-queryinspect
+django-debug-toolbar
