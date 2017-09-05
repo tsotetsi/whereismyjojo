@@ -4,8 +4,8 @@ from faker import Faker
 
 from apps.juber import models
 
-
 fake = Faker()
+
 
 class ModelFactory(factory.django.DjangoModelFactory):
     name = 'benz truck'
