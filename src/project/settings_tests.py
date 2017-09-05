@@ -1,4 +1,4 @@
-from project.settings import *
+from project.settings import *  # noqa
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '50d-f_v10t^1s*hdd(yje1jd=&ch6^b0!^ur(1h#a4tnb-kqb0'

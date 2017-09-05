@@ -1,4 +1,4 @@
-from project.settings import *
+from project.settings import *  # noqa
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
