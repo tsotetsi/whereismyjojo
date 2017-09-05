@@ -12,6 +12,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'project',
+    'apps.juber',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
