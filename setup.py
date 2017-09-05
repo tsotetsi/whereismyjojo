@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='metsing',
+    name='whereismyjojo',
     version='0.0.1.alpha',
-    description='Uber like web application for Jojo Tanks.',
+    description='Uber like, whereismyjojo tank.',
     author='Thapelo Tsotetsi',
     author_email='info@tsotetsithapelo.co.za',
     url='http://metsing.com',
