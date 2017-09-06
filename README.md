@@ -1,5 +1,5 @@
 # WhereismyJojo
-WhereismyJojoTruck or Uber for JojoTank tracks.
+Whereismyjojo | Uber like for Jojo Tank trucks.
 
 ## Setup development environment.
 

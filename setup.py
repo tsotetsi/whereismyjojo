@@ -6,7 +6,7 @@ setup(
     description='Uber like, whereismyjojo tank.',
     author='Thapelo Tsotetsi',
     author_email='info@tsotetsithapelo.co.za',
-    url='http://metsing.com',
+    url='http://whereismyjojo.com',
     install_requires=[
         'Django',
         'django-model-utils',
