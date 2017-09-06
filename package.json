@@ -1,0 +1,28 @@
+{
+  "name": "whereismyjojo",
+  "version": "0.0.1",
+  "description": "Whereismyjojo | Uber like for Jojo Tank trucks.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsotetsi/whereismyjojo.git"
+  },
+  "keywords": [
+    "angular",
+    "django",
+    "djangorestframework",
+    "whereismyjojo"
+  ],
+  "author": "Thapelo Tsotetsi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsotetsi/whereismyjojo/issues"
+  },
+  "homepage": "https://github.com/tsotetsi/whereismyjojo#readme"
+}

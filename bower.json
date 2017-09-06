@@ -1,0 +1,24 @@
+{
+  "name": "whereismyjojo",
+  "description": "Whereismyjojo | Uber like for Jojo Tank trucks.",
+  "main": "index.js",
+  "authors": [
+    "Thapelo Tsotetsi"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "django",
+    "djangorestframework",
+    "whereismyjojo"
+  ],
+  "homepage": "https://github.com/tsotetsi/whereismyjojo",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
