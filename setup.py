@@ -10,6 +10,9 @@ setup(
     install_requires=[
         'Django',
         'django-model-utils',
+        'djangorestframework',
+        'psycopg2',
+        'drfdocs==0.0.9',  # TODO: Anything above this breaks. See https://goo.gl/RgPu85
     ],
     package_dir={'': 'src'},
     packages=find_packages('src'),
