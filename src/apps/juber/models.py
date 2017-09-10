@@ -4,8 +4,7 @@ from __future__ import unicode_literals
 import string
 import random
 
-from django.contrib.gis.db import models as gismodel
-from django.db import models
+from django.contrib.gis.db import models
 from django.core.validators import MinLengthValidator, MaxLengthValidator
 from model_utils.models import TimeStampedModel
 
@@ -49,8 +48,8 @@ class Vehicle(TimeStampedModel):
 
 
 class Location(models.Model):
-    departure = gismodel.PointField()
-    destination = gismodel.PointField()
+    departure = models.PointField()
+    destination = models.PointField()
 
     def __str__(self):
         return '{} : {}.'.format(self.departure, self.destination)
