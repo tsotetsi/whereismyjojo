@@ -95,3 +95,7 @@ dev/
 
 # SQL Lite File
 *.sqlite3
+
+# JS Files.
+bower_components/
+node_modules/
