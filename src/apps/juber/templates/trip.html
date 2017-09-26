@@ -4,11 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Trip View</title>
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
     <link rel="stylesheet" type="text/css" href="{% static 'juber/style.css' %}">
 </head>
 <body>
-    <p>Test</p>
+    <div id="map"></div>
 
-    <script src="{% static 'juber/app.js' %}"></script>
+    <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script type="text/javascript" src="{% static 'juber/MovingMarker.js' %}"></script>
+    <script type="text/javascript" src="{% static 'juber/script.js' %}"></script>
+    <script type="text/javascript" src="{% static 'juber/app.js' %}"></script>
 </body>
 </html>
