@@ -9,11 +9,12 @@ WhereismyJojoTruck or Uber for JojoTank trucks.
     `sudo apt install gdal-bin` - Solves (django.core.exceptions.ImproperlyConfigured: Could not find the GDAL library....).
 
 ## Init project.
-    The following command will install all project dependencies.
+    
+The following command will install all project dependencies.
 
     `pip install -e .`
 
-## Setup PostgreSQL(DB) for the project.
+## Setup PostgreSQL(DB) + GIS for the project.
 
   `sudo apt update` - update local packages index.
 
@@ -25,10 +26,17 @@ WhereismyJojoTruck or Uber for JojoTank trucks.
 
   `sudo -u postgres create user thapelo with superuser password 'thapelo'` - create db user(role) for the project.
 
-## Running the project using dev settings.
-  The following command is used to run the project.
+  `sudo apt install postgis` - Installs postgis extension.
 
-  `django-admin runserver --settings=settings_dev`
+
+## Running the project using dev settings.
+The following command is used to run the project.
+
+  `django-admin migrate --settings=settings_dev` - run migrations.
+
+  `django-admin runserver --settings=settings_dev` - run the actual project.
+
+  `http://127.0.0.1:8000/api` - project api url.
 
 
 ## Running tests.
