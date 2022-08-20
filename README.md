@@ -28,6 +28,8 @@ The following command will install all project dependencies.
 
   `sudo apt install postgis` - Installs postgis extension.
 
+  `django-admin createsuperuser thapelo` - create superuser for the admin page.
+
 
 ## Running the project using dev settings.
 The following command is used to run the project.

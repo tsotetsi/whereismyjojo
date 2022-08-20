@@ -5,7 +5,7 @@ import string
 import random
 
 from django.contrib.gis.db import models
-from django.core.validators import MinLengthValidator, MaxLengthValidator
+from django.core.validators import MinValueValidator, MaxValueValidator
 from model_utils.models import TimeStampedModel
 
 
@@ -21,11 +21,11 @@ class Vehicle(TimeStampedModel):
     model = models.ForeignKey(Model, on_delete=models.CASCADE)
     registration_number = models.CharField(max_length=25)
     field_number = models.CharField(max_length=25)
-    liters = models.FloatField(validators=[MinLengthValidator(0), MaxLengthValidator(50000)])
+    liters = models.FloatField(validators=[MinValueValidator(0), MaxValueValidator(50000)])
     is_active = models.BooleanField(default=False)
 
     def __str__(self):
-        return '{} with reg number {} having {:.2d} liter(s).'.format(self.model, self.registration_number, self.liters)
+        return '{} with reg number {} having {:.2f} liter(s).'.format(self.model, self.registration_number, self.liters)
 
     @staticmethod
     def generate_field_number():

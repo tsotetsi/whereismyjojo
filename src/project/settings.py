@@ -113,5 +113,5 @@ MEDIA_ROOT = 'media/'
 MEDIA_URL = '/media/'
 
 # Django admin page headers.
-# admin.site.site_header = 'WhereismyJojo'
-# admin.site.site_title = 'WhereismyJojo'
+#admin.site.site_header = 'WhereismyJojo'
+#admin.site.site_title = 'WhereismyJojo'
