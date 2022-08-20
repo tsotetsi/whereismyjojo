@@ -1,9 +1,9 @@
-from django.conf.urls import url
+from django.urls import re_path
 
 from apps.juber.views import IndexView, TripView
 
 
 urlpatterns = [
-    url(r'^$', IndexView.as_view(), name='index'),
-    url(r'trip/', TripView.as_view(), name='trip'),
+    re_path(r'^$', IndexView.as_view(), name='index'),
+    re_path(r'trip/', TripView.as_view(), name='trip'),
 ]

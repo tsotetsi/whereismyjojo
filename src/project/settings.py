@@ -13,6 +13,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = (
     'project',
     'apps.juber',
+    'apps.api',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -23,15 +24,13 @@ INSTALLED_APPS = (
     'django.contrib.gis',
 
     'rest_framework',
-    'rest_framework_docs',
 )
 
-MIDDLEWARE_CLASSES = (
+MIDDLEWARE = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -64,8 +63,9 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'whereismyjojo',
-        'USER': 'postgres',
+        'NAME': 'whereismyjojo_dev',
+        'USER': 'thapelo',
+        'PASSWORD': 'thapelo',
         'HOST': 'localhost',
     }
 }
@@ -113,5 +113,5 @@ MEDIA_ROOT = 'media/'
 MEDIA_URL = '/media/'
 
 # Django admin page headers.
-admin.site.site_header = 'WhereismyJojo'
-admin.site.site_title = 'WhereismyJojo'
+# admin.site.site_header = 'WhereismyJojo'
+# admin.site.site_title = 'WhereismyJojo'

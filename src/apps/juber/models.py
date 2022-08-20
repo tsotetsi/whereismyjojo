@@ -67,8 +67,8 @@ class Driver(models.Model):
 
 class Trip(models.Model):
     location = models.ManyToManyField(Location)
-    driver = models.ForeignKey(Driver)
-    vehicle = models.ForeignKey(Vehicle)
+    driver = models.ForeignKey(Driver, on_delete=models.CASCADE)
+    vehicle = models.ForeignKey(Vehicle, on_delete=models.CASCADE)
 
     def __str__(self):
         return '{} going to {}.'.format(self.driver.name, self.location)
