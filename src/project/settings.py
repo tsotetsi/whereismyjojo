@@ -24,6 +24,8 @@ INSTALLED_APPS = (
     'django.contrib.gis',
 
     'rest_framework',
+    'django_jenkins.tasks.run_pep8',
+    'django_jenkins.tasks.run_pyflakes'
 )
 
 MIDDLEWARE = (
