@@ -1,7 +1,9 @@
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
-from django.contrib import admin
+import django
+from django.utils.encoding import smart_str
+django.utils.encoding.smart_text = smart_str
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -24,6 +26,7 @@ INSTALLED_APPS = (
     'django.contrib.gis',
 
     'rest_framework',
+    'django_jenkins',
     'django_jenkins.tasks.run_pep8',
     'django_jenkins.tasks.run_pyflakes'
 )
