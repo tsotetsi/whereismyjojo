@@ -1,4 +1,3 @@
-# WhereismyJojo [![Build Status](https://travis-ci.org/tsotetsi/whereismyjojo.svg?branch=develop)](https://travis-ci.org/tsotetsi/whereismyjojo)
 WhereismyJojoTruck or Uber for JojoTank trucks.
 
 ## Setup development environment.
