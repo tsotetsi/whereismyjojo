@@ -7,7 +7,7 @@ from rest_framework.test import APITestCase, APIClient
 from.factories import UserFactory
 
 
-class UserModelTests(APITestCase):
+class UserModelTests(TestCase):
     def setUp(self):
         super(UserModelTests, self).setUp()
         self.client = APIClient()
