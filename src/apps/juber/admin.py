@@ -14,4 +14,3 @@ admin.site.register(Vehicle)
 admin.site.register(Location)
 admin.site.register(Driver)
 admin.site.register(Trip)
-

@@ -31,11 +31,11 @@ The following command will install all project dependencies.
 
 
 ## Running the project using dev settings.
-The following command is used to run the project.
+The following command is used to run the project, from the root project directory.
 
-  `django-admin migrate --settings=settings_dev` - run migrations.
+  `django-admin migrate --settings=project.settings_dev` - run migrations.
 
-  `django-admin runserver --settings=settings_dev` - run the actual project.
+  `django-admin runserver --settings=project.settings_dev` - run dev server
 
   `http://127.0.0.1:8000/api` - project api url.
 
