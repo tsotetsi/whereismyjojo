@@ -36,6 +36,7 @@ class VehicleFactory(factory.django.DjangoModelFactory):
     registration_number = 'ABC 123 WP'
     field_number = 'CTN-021'
     liters = 30000
+    is_active = False
 
     class Meta:
         model = models.Vehicle
@@ -53,6 +54,7 @@ class DriverFactory(factory.django.DjangoModelFactory):
     name = fake.name()
     contact_number = '+27831234567'
     license_number = 'WN95TP2HA9QMC99'
+    has_pdp = False
 
     class Meta:
         model = models.Driver
@@ -64,4 +66,4 @@ class TripFactory(factory.django.DjangoModelFactory):
     vehicle = factory.SubFactory(VehicleFactory)
 
     class Meta:
-        model = models.Model
+        model = models.Trip
